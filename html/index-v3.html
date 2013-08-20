@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/Users/allenjanian/Desktop/esgrow.co/css/main.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" type="text/css" href="/Users/allenjanian/Desktop/esgrow.co/socialico/Socialico.otf">
+<script type="text/javascript" src="/Users/allenjanian/Desktop/esgrow.co/jquery/jquery.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="/Users/allenjanian/Desktop/esgrow.co/script.js"></script>
+<title>esgrow.co</title>
+</head>
+<body>
+<header>
+<div id="nav-top">
+  <div>
+  <span id="logo">esgrow.co</span>
+  <p id="social-icons"><a href="https://twitter.com/esgrow">t</a><a href="">f</a></p>
+  </div>
+  <h2 id="navbar">
+  <span><a href="#how-it-works">How it works</a></span>
+  <span></span>
+  <span><a href="#about-us">About us</a></span>
+  </h2>
+</div>
+</header>
+<!-- Side by side front page images -->
+<div id="mainpage">
+  <div id="main-canvas">
+    <h1 id="canvas-text">Grape Marketplace</h1>
+  </div>
+  <!-- First Section / Forms -->
+  <!-- Growers Button -->
+  <div id="growers-or-winemakers" class="color-section">
+    <span id="mainButtons">
+      <button id="grapeButton" onclick="grapeButton()" type="button">Grape Growers</button>
+      <!-- Growers Form -->
+      <span id="grapeList">
+      <div id="stylized" class="myform">
+        <form id="form">
+          <h1>Growers</h1>
+          <p>
+            A little information about your grapes/vineyard
+          </p>
+          <label>Varietal</label>
+          <select class="varietal-select">
+            <option value="0" selected="selected">Select one</option>
+            <option value="1">Aglianico</option>
+            <option value="2">Aleatico</option>
+            <option value="3">Alicante Bouschet</option>
+            <option value="4">Alvarelhao</option>
+            <option value="5">Arneis</option>
+            <option value="6">Barbera</option>
+            <option value="7">Cabernet Franc</option>
+            <option value="8">Cabernet Sauvignon</option>
+            <option value="9">Carignane</option>
+            <option value="10">Carmenere</option>
+            <option value="11">Charbono</option>
+            <option value="12">Chardonnay</option>
+            <option value="13">Chenin Blanc</option>
+            <option value="14">Cinsault</option>
+            <option value="15">Dolcetto</option>
+            <option value="16">French Colombard</option>
+            <option value="17">Gamay Beaujolais</option>
+            <option value="18">Gewurztraminer</option>
+            <option value="19">Grenache</option>
+            <option value="20">Grignolino</option>
+            <option value="21">Johannisberg Riesling</option>
+            <option value="22">Malbec</option>
+            <option value="23">Malvasia Bianca</option>
+            <option value="24">Marsanne</option>
+            <option value="25">Melon</option>
+            <option value="26">Merlot</option>
+            <option value="27">Meunier</option>
+            <option value="28">Mondeuse</option>
+            <option value="29">Mourvedre</option>
+            <option value="30">Muscat</option>
+            <option value="31">Muscat Blanc</option>
+            <option value="32">Napa Gamay</option>
+            <option value="33">Nebbiolo</option>
+            <option value="34">Palomino</option>
+            <option value="35">Petit Verdot</option>
+            <option value="36">Petite Sirah</option>
+            <option value="37">Pinot Blanc</option>
+            <option value="38">Pinot Gris</option>
+            <option value="39">Pinot Noir</option>
+            <option value="40">Primitivo</option>
+            <option value="41">Roussanne</option>
+            <option value="42">Ruby Cabernet</option>
+            <option value="43">Sangiovese</option>
+            <option value="44">Sauvignon Blanc</option>
+            <option value="45">Semillon</option>
+            <option value="46">Shiraz</option>
+            <option value="47">Syrah</option>
+            <option value="48">Tempranillo</option>
+            <option value="49">Viognier</option>
+            <option value="50">White Riesling</option>
+            <option value="51">Zinfandel</option>
+            <option value="52">Other</option>
+            </option>
+          </select>
+          <label>Appellation <span class="small"></span>
+          </label>
+          <select class="appellation-select">
+            <option value="" selected="selected">Select one</option>
+            <option value="">Alexander Valley</option>
+            <option value="">Bennett Valley</option>
+            <option value="">Central CA</option>
+            <option value="">Dry Creek Valley</option>
+            <option value="">Fort Ross</option>
+            <option value="">Knights Valley</option>
+            <option value="">Marin County</option>
+            <option value="">Sonoma County</option>
+            <option value="">Pine Mountain</option>
+            <option value="">Rockpile</option>
+            <option value="">Russian River Valley</option>
+            <option value="">Russian River Valley - Chalk Hill</option>
+            <option value="">Russian River Valley - Green Valley</option>
+            <option value="">Sonoma Carneros</option>
+            <option value="">Sonoma Coast</option>
+            <option value="">Sonoma County</option>
+            <option value="">Sonoma Mountain</option>
+            <option value="">Sonoma Valley</option>
+          </select>
+          <div>
+          <label>Age of Vines <span>in years</span>
+          </label>
+          <input type="text" name="" id="age-form"/>
+        </div>
+        <div>
+          <label>Zip code <span>e.g., 95404</span>
+          </label>
+          <input type="text" name="" id="zip-form"/>
+        </div>
+        <div>
+          <label>Acres <span>e.g., 3 acres</span>
+          </label>
+          <input type="text" name="" id="acres-form"/>
+        </div>
+        <div>
+          <label>Price/ton <span>e.g., 3k/ton</span>
+          </label>
+          <input type="text" name="" id="price-form"/>
+        </div>
+        <div>
+          <label>Grower <span>e.g., John Smith</span>
+          </label>
+          <input type="text" name="" id="grower-name-form"/>
+        </div>
+        <div>
+          <label>Contact info <span>Phone or email</span>
+          </label>
+          <input type="text" name="" id="grower-contact-form"/>
+        </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      </span>
+      <!-- Winemakers Button -->
+      <button id="wineButton" onclick="wineButton()">Winemakers</button>
+    </span>
+  
+  <!-- Winemakers search form -->
+      <span id="wineList">
+        <h1>Winemakers</h1>
+        <p>Search for grapes</p>
+        <form>
+      <label>Varietal 
+      </label>
+      <select>
+        <option value="0" selected="selected">Select one</option>
+        <option value="1">Aglianico</option>
+        <option value="2">Aleatico</option>
+        <option value="3">Alicante Bouschet</option>
+        <option value="4">Alvarelhao</option>
+        <option value="5">Arneis</option>
+        <option value="6">Barbera</option>
+        <option value="7">Cabernet Franc</option>
+        <option value="8">Cabernet Sauvignon</option>
+        <option value="9">Carignane</option>
+        <option value="10">Carmenere</option>
+        <option value="11">Charbono</option>
+        <option value="12">Chardonnay</option>
+        <option value="13">Chenin Blanc</option>
+        <option value="14">Cinsault</option>
+        <option value="15">Dolcetto</option>
+        <option value="16">French Colombard</option>
+        <option value="17">Gamay Beaujolais</option>
+        <option value="18">Gewurztraminer</option>
+        <option value="19">Grenache</option>
+        <option value="20">Grignolino</option>
+        <option value="21">Johannisberg Riesling</option>
+        <option value="22">Malbec</option>
+        <option value="23">Malvasia Bianca</option>
+        <option value="24">Marsanne</option>
+        <option value="25">Melon</option>
+        <option value="26">Merlot</option>
+        <option value="27">Meunier</option>
+        <option value="28">Mondeuse</option>
+        <option value="29">Mourvedre</option>
+        <option value="30">Muscat</option>
+        <option value="31">Muscat Blanc</option>
+        <option value="32">Napa Gamay</option>
+        <option value="33">Nebbiolo</option>
+        <option value="34">Palomino</option>
+        <option value="35">Petit Verdot</option>
+        <option value="36">Petite Sirah</option>
+        <option value="37">Pinot Blanc</option>
+        <option value="38">Pinot Gris</option>
+        <option value="39">Pinot Noir</option>
+        <option value="40">Primitivo</option>
+        <option value="41">Roussanne</option>
+        <option value="42">Ruby Cabernet</option>
+        <option value="43">Sangiovese</option>
+        <option value="44">Sauvignon Blanc</option>
+        <option value="45">Semillon</option>
+        <option value="46">Shiraz</option>
+        <option value="47">Syrah</option>
+        <option value="48">Tempranillo</option>
+        <option value="49">Viognier</option>
+        <option value="50">White Riesling</option>
+        <option value="51">Zinfandel</option>
+        <option value="52">Other</option>
+        </option>
+      </select>
+      <label>Appellation <span></span>
+      </label>
+      <select>
+        <option value="" selected="selected">Select one</option>
+        <option value="">Alexander Valley</option>
+        <option value="">Bennett Valley</option>
+        <option value="">Central CA</option>
+        <option value="">Dry Creek Valley</option>
+        <option value="">Fort Ross</option>
+        <option value="">Knights Valley</option>
+        <option value="">Marin County</option>
+        <option value="">Sonoma County</option>
+        <option value="">Pine Mountain</option>
+        <option value="">Rockpile</option>
+        <option value="">Russian River Valley</option>
+        <option value="">Russian River Valley - Chalk Hill</option>
+        <option value="">Russian River Valley - Green Valley</option>
+        <option value="">Sonoma Carneros</option>
+        <option value="">Sonoma Coast</option>
+        <option value="">Sonoma County</option>
+        <option value="">Sonoma Mountain</option>
+        <option value="">Sonoma Valley</option>
+      </select>
+      <div>
+      <label>Age of Vines <span>in years</span>
+      </label>
+      <input type="text" name="" id="age-form"/>
+      </div>
+      <div>
+      <label>Zip code <span>e.g., 95404</span>
+      </label>
+      <input type="text" name="" id="zip-form"/>
+      </div>
+      <div>
+      <label>Acres <span>e.g., 3 acres</span>
+      </label>
+      <input type="text" name="" id="acres-form"/>
+      </div>
+      <div>
+      <label>Price/ton <span>e.g., 3k/ton</span>
+      </label>
+      <input type="text" name="" id="price-form"/>
+      </div>
+      <div>
+      <label>Grower <span>e.g., John Smith</span>
+      </label>
+      <input type="text" name="" id="grower-name-form"/>
+      </div>
+      <div>
+      <label>Contact info <span>Phone or email</span>
+      </label>
+      <input type="text" name="" id="grower-contact-form"/>
+      </div>
+      <button type="submit">Submit</button>
+</form>
+</div>
+</span>
+</ul>
+</div>
+<!-- Second Section -->
+<div id="how-it-works" class="color-section">
+<h2>How it works</h2>
+<p>
+We know firsthand how important it is to find the right grapes. We also know how important it is to find the right buyer. If you're a grape grower, just list your grapes and a little information about them. If you're a winemaker or buyer, you can begin your search for a new batch of grapes now!
+</p>
+<span class="section-image"><img src="/Users/allenjanian/Desktop/esgrow.co/esgrowimages/wine-glass.png" height="175" width="175"></span>
+</div>
+<!-- Third Section -->
+<div id="about-us" class="color-section">
+<h2>About us</h2>
+<p>
+Located in the heart of wine country in beautiful Northern California, we are second generation graper-growers and entrepreneurs. We quickly noticed how fragmented the grape buying and selling market is, and so Esgrow was born!
+</p>
+<span class="section-image"><img src="/Users/allenjanian/Desktop/esgrow.co/esgrowimages/wine-bottle.png" height="175" width="175"></span>
+</div>
+<div id="social" class="color-section">
+<h2>Connect with us</h2>
+<h4>Follow us on<a href="https://twitter.com/esgrow"> Twitter</a> 
+</h4>
+<h4>or like us on<a href="https://facebook.com/esgrow"> Facebook</a>
+</h4>
+<h4 id="info-email">info@esgrow.co</h4>
+</div>
+</div>
+<!-- Footer and social -->
+<footer>
+<div>
+<h5>esgrow.co copyright, 2013</h5>
+</div>
+</footer>
+</body>
+</html>
